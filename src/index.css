@@ -75,6 +75,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.navbar-menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .navbar-menu-enter {
   opacity: 0;
   transform: translateX(-100%);
@@ -95,4 +102,16 @@ button:focus-visible {
   opacity: 0;
   transform: translateX(-100%);
   transition: opacity 300ms, transform 300ms;
+}
+
+.navbar-shadow {
+  visibility: visible;
+  opacity: 0.25;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.navbar-shadow.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
